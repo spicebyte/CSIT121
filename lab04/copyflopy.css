@@ -1,0 +1,94 @@
+body {
+    background-image: url("images/greenplaid.jpg");
+}
+
+h1 {
+    font-size: 50px;
+    text-align:center;
+    background-color:#618570;
+    color:#D4E2DA;
+    border:5px dashed #D4E2DA;
+    padding:15px;
+    margin-left:35%;
+    margin-right:35%;
+    border-radius: 15px;
+}
+
+div, nav {
+    background-color:#618570;
+    color:#D4E2DA;
+    border:5px dashed #D4E2DA;
+    padding:15px;
+    margin-left:5%;
+    margin-right:40%;
+    border-radius: 15px;
+}
+
+h2 {
+    font-size:40px;
+    text-align:center;
+}
+
+p {
+    font-size:30px;
+    text-align:center;
+}
+
+.source {
+    color:white;
+    font-size: 17px;
+    text-align:right;
+    margin-right: 40px;
+}
+
+.sage {
+    margin-top: -60%;
+    margin-left:65%;
+    margin-right:5%;
+    width: 545px;
+    height: auto;
+    border:5px dashed #D4E2DA;
+    border-radius: 15px;
+}
+
+.rift {
+    margin-top: -35%;
+    margin-left:65%;
+    margin-right:5%;
+    width: 465px;
+    height: auto;
+    border:5px dashed #D4E2DA;
+    border-radius: 15px;
+}
+
+.kawa {
+    margin-top: -34.3%;
+    margin-left:65%;
+    margin-right:5%;
+    width: 445px;
+    height: auto;
+    border:5px dashed #D4E2DA;
+    border-radius: 15px;
+}
+
+.plu {
+    margin-top: -32.3%;
+    margin-left:65%;
+    margin-right:5%;
+    width: 500px;
+    height: auto;
+    border:5px dashed #D4E2DA;
+    border-radius: 15px;
+}
+
+a:link {
+    color:#2F4739;
+}
+
+a:hover {
+    color:#94E08B;
+}
+
+a:visited {
+    color:#2F4739;
+}
