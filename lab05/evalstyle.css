@@ -1,0 +1,56 @@
+html, body {
+    background-color:#618570;
+    text-align:center;
+    margin: 10px 100px 75px 100px;
+    font-family: 'Garamond', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header, div {
+    border-bottom: 2px solid #406145;
+}
+
+p, ul {
+    font-size: 22px;
+}
+
+.boxes {
+  width: 100%;
+  border-bottom: 0px;
+}
+
+.box1 {
+  float: left;
+  margin-left: 100px;
+  width: 40%;
+  background-color: #CBDBC8;
+}
+
+.box2 {
+  float: right;
+  margin-right: 100px;
+  width: 40%;
+  background-color: #CBDBC8;
+}
+
+.bottom {
+    border-top: 2px solid #406145;
+    margin-top: 520px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+a:link {
+    color:#173619;
+}
+
+a:hover {
+    color:#94E08B;
+}
+
+a:visited {
+    color:#173619;
+}
