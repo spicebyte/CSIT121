@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 07: Tables and Forms</title>
+    <link rel="stylesheet" href="rankstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Ranking Red Velvet's post-hiatus Songs</h1>
+    </header>
+    <br>
+    <main>
+        <div class="container">
+            <section>
+                <h2 style="text-align: center;">Learning while having Fun</h2>
+                <p>
+                    Following their group hiatus from 2019 to 2021, Red Velvet
+                    has had 7 comebacks: 5 mini-albums, 1 full-length album, and 1
+                    Japanese full-length album. This table ranks all of the songs
+                    on their post-hiatus mini-albums into tiers based on my personal
+                    liking. This is my first table in html! Not only did I use dashed borders
+                    borders and cell shading to represent all of the Red Velvet members 
+                    colors, but I also practiced proper accessibility techniques by adding
+                    captions, labels, and scope attributes to the table. Do you agree with my 
+                    tier list? Let me know! You can access the
+                    <a href="form.html">Submission Form</a> here!
+                </p>
+                <table aria-label="Songs Ranking Table">
+                <caption style="font-size: 18px; font-weight: bold;">Red Velvet's Post-Hiatus Songs Ranking</caption>
+                    <thead id="albums">
+                        <tr style="background-color: #FFD1C3;">
+                            <th scope="col">Tier</th>
+                            <th scope="col">Queendom <img src="images/queendom.jpeg" alt="Red Velvet's Queendom Album Cover" style="width: 120px; height: 120px;"></th>
+                            <th scope="col">Feel My Rhythm <img src="images/fmr.jpg" alt="Red Velvet's Feel My Rhythm Album Cover" style="width: 120px; height: 120px;"></th>
+                            <th scope="col">Birthday <img src="images/birthday.jpg" alt="Red Velvet's Birthday Album Cover" style="width: 120px; height: 120px;"></th>
+                            <th scope="col">Cosmic <img src="images/cosmic.jpg" alt="Red Velvet's Cosmic Album Cover" style="width: 120px; height: 120px;"></th>
+                            <th scope="col">Velvet Summer <img src="images/surfinb.jpg" alt="Red Velvet's Velvet Summer Album Cover" style="width: 120px; height: 120px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="songs">
+                        <tr style="background-color: #FFE6FE;">
+                            <td>S+</td>
+                            <td></td>
+                            <td>
+                                <ul>
+                                    <li>Good, Bad, Ugly</li>
+                                    <li>Rainbow Halo</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>BYE BYE</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Bubble</li>
+                                    <li>Last Drop</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Orchestra</li>
+                                </ul>
+                        </tr>
+                        <tr style="background-color: #FCFCBB;">
+                            <td>S</td>
+                            <td>
+                                <ul>
+                                    <li>Pushin' N Pullin'</li>
+                                    <li>Queendom</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Beg For Me</li>
+                                    <li>Feel My Rhythm</li>
+                                    <li>BAMBOLEO</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>ZOOM</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Cosmic</li>
+                                </ul>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr style="background-color: #C1F0C1;">
+                            <td>A</td>
+                            <td>
+                                <ul>
+                                    <li>Pose</li>
+                                    <li>Knock On Wood</li>
+                                </ul>
+                            </td>
+                            <td></td>
+                            <td>
+                                <ul>
+                                    <li>Birthday</li>
+                                    <li>On A Ride</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Night Drive</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Hot Girls Cold Vibe</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr style="background-color: #BFDFFF;">
+                            <td>B</td>
+                            <td>
+                                <ul>
+                                    <li>Better Be</li>
+                                    <li>Hello, Sunset</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>In My Dreams</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Celebrate</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Love Arcade</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Surfin' Boy</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr style="background-color: #F4E6FF;">
+                            <td>C</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <ul>
+                                    <li>Sunflower</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Hula Hoop</li>
+                                    <li>Hawaii</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="text-align: center;">
+                    Note: <i>No</i> Red Velvet song is below a "C" rating.</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 07: Tables and Forms</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <header>
+        <h1>ReVeluv Contact Form</h1>
+    </header>
+    <br>
+    <main>
+        <div class="container">
+            <section>
+                <h2 style="text-align: center;">What Do You Think?</h2>
+                <p>
+                    This is a contact form for fellow ReVeluvs to submit 
+                    their thoughts on my Red Velvet post-hiatus song ranking!
+                </p>
+                <form id="reveluv" action="#" method="post" aria-label="Contact Form">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" aria-required="true">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" aria-required="true">
+                    </div>
+                    <br>
+                    <div>
+                    <fieldset>
+                        <legend id="ranking">Do you agree with my ranking?</legend><br>
+                        <input type="radio" id="agree" name="ranking" value="Agreed" aria-required="true">
+                        <label for="agree">Yes</label><br>
+                        <input type="radio" id="disagree" name="ranking" value="Disagreed">
+                        <label for="disagree">No</label><br>
+                    </fieldset>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="favalbum">Which is your favorite post-hiatus Red Velvet mini album?</label><br>
+                        <select id="favalbum" name="favalbum" aria-required="true">
+                            <option value="">- Please select an option -</option>
+                            <option value="Queendom">Queendom</option>
+                            <option value="Feel My Rhythm">Feel My Rhythm</option>
+                            <option value="Birthday">Birthday</option>
+                            <option value="Cosmic">Cosmic</option>
+                            <option value="Velvet Summer">Velvet Summer</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                    <fieldset>
+                        <legend id="bias">Who is your Red Velvet bias?</legend><br>
+                        <input type="checkbox" id="bias-irene" name="bias-member" value="Irene">
+                        <label for="bias-irene">Irene</label><br>
+                        <input type="checkbox" id="bias-seulgi" name="bias-member" value="Seulgi">
+                        <label for="bias-seulgi">Seulgi</label><br>
+                        <input type="checkbox" id="bias-wendy" name="bias-member" value="Wendy">
+                        <label for="bias-wendy">Wendy</label><br>
+                        <input type="checkbox" id="bias-joy" name="bias-member" value="Joy">
+                        <label for="bias-joy">Joy</label><br>
+                        <input type="checkbox" id="bias-yeri" name="bias-member" value="Yeri">
+                        <label for="bias-yeri">Yeri</label><br>
+                    </fieldset>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" aria-describedby="message-hint" rows="5" cols="40"></textarea><br><br>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+                <script>
+                    document.getElementById('reveluv').addEventListener('submit', function(event) {
+                        event.preventDefault(); //stop the browser from submitting the form because this script is handling it. 
+
+                        //all the following code get the info from the form and puts it in a constant
+                        const name = document.getElementById('name').value;
+                        const email = document.getElementById('email').value;
+                        const favalbum = document.getElementById('favalbum').value;
+                        const ranking = document.querySelector('input[name="ranking"]:checked').value;
+                        const bias = document.querySelectorAll('input[name="bias-member"]:checked');
+                        const biasValues = Array.from(bias).map(box => box.value);
+                        const message = document.getElementById('message').value;
+
+                        //put all the form info into a one long string
+                        const data = `Name: ${name}\nEmail: ${email}\nFavorite post-hiatus Album: ${favalbum}\nAgree with Ranking?: ${ranking}\nRed Velvet Bias: ${biasValues.join(', ')}\nMessage: ${message}`;
+                        
+                        //The remaining code is used to create and download a text file from the browser - see comments after each line
+                        const blob = new Blob([data], { type: 'text/plain' }); //create a blob object and put all the data in it
+                        const url = URL.createObjectURL(blob); //create a temp URL to reference the blob
+                        const a = document.createElement('a'); //dynamically create an anchor tag
+                        a.href = url; //use the blog URL you generated for the dynamically created anchor tag
+                        a.download = 'form-data-from-' + name + '.txt'; //create the file name that will be used
+                        a.click(); //simulate the clicking of the anchor tag your created 
+                        URL.revokeObjectURL(url); //dump the temporary URL - it's no longer needed. 
+                    });
+                </script>
+            </section>
+            <p style="text-align: center;"><a href="ranking.html">Return to Song Ranking</a></p>
+        </div>
+    </main>
+</body>
+</html>

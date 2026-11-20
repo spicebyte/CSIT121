@@ -1,0 +1,45 @@
+body {
+    background-image: url("images/greenplaid.jpg");
+}
+
+header {
+    text-align: center;
+    background-color: #618570;
+    color: #D4E2DA;
+    max-width: 1000px;
+    padding:7px;
+    border:5px dashed #D4E2DA;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+}
+
+p {
+    font-size: 18px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+a, a:visited {
+    color: #1E3414;
+    font-weight:bold;
+}
+
+.container {
+    background: #D4E2DA;
+    padding: 10px;
+    border: 5px dashed #618570;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+}
+
+table, th, td {
+  border: 2px dotted white;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+}
