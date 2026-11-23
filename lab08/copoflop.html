@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 04: Visual Media</title>
+    <link rel="stylesheet" href="copyflopy.css">
+</head>
+<body>
+    <header>
+        <h1>Cop or Flop!</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Gather 'round folks!</h2>
+            <p>With this assignment, we'll have some fun!
+            It's time to play one of my favorite games, <i>Cop or Flop</i>.
+            Created by your very own, in this game, I present the viewer
+            with an item I would like to purchase, but it may be too
+            expensive or impractical. It's up to you to decide if I
+            should <b>COP</b> it, or if it's a <b>FLOP</b>!</p>
+            <p>Each item will be shown to you in a different web graphic
+            format! Click on an item below to get started!</p>
+            </div>
+        <br>
+        <br>
+        <br>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a>Navigation</a>
+                <a href="copoflop.html" class="active">Home</a>
+                <a href="nike.html" class="link">Item #1</a>
+                <a href="people.html" class="link">Item #2</a>
+                <a href="kawac.html" class="link">Item #3</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+            </script>
+        </nav>
+        <aside>
+            <img class="sage" src="images/sageism.jpeg" alt="Sageism hat and Bose headphones">
+            <p class="source">Image taken by me</p>
+        </aside>
+    </main>
+</body>
+</html>
